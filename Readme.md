@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alina Bolonkina](https://up.htmlacademy.ru/htmlcss/23/user/863199).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://up.htmlacademy.ru/htmlcss/23/user/262423).
 
 ---
 
