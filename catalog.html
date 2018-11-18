@@ -2,18 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Магазин Нёрдс</title>
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
         <nav class="main-navigation"> 
             <a class="main-header-logo" href="index.html">
-                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип дизайн-студии Нёрдс">
+                <img src="img/nerds-logo.svg" width="368" height="153" alt="Логотип дизайн-студии Нёрдс">
             </a>
             <ul class="site-navigation">
             <li><a href="about.html">Студия</a></li>
             <li><a href="clients.html">Киенты</a></li>
-            <li><a>Магазин</a></li>
+            <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
             </ul>  
             <ul class="user-navigation">
@@ -21,17 +22,59 @@
             </ul>    
         </nav>
     </header>
-    <main class="container">
-      <h1 class="shop-name">Магазин готовых шаблонов</h1>
-      
-      
-      
+    <main class="container-catalog">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        </section>    
+        <!-- Здесь будет форма -->
+        <section class="catalog">
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <ul class="catalog-list">
+               <li class="partners-item">
+                   <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+                   <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Седония">
+                </li>
+                <li class="partners-item">
+                    <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+                    <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Пинк">
+                </li>
+                <li class="partners-item">
+                    <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+                    <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп">
+                </li>
+                <li class="partners-item">
+                    <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+                    <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Мишка">
+                </li>
+                <li class="partners-item">
+                    <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+                    <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон Аплус"></li>
+                <li class="partners-item">
+                    <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+                    <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст"></li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
-      
-      
-      
-      
+   <footer class="main-footer">
+        <!-- Здесь будет карта -->
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-btn social-btn-vk" href="#">В Контакте</a></li>
+                <li><a class="social-btn social-btn-facebook" href="#">Facebook</a></li>
+                <li><a class="social-btn social-btn-instagram" href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-promo">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
     </footer>
   </body>
 </html>
