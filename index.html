@@ -6,8 +6,10 @@
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+      
+<!-- Header -->      
     <header class="main-header">
-        <nav class="main-navigation"> 
+        <nav class="main-navigation" aria-label="Содержимое меню"> 
             <a class="main-header-logo">
                 <img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип дизайн-студии Нёрдс">
             </a>
@@ -22,7 +24,9 @@
             </ul>    
         </nav>
     </header>
-    <main class="container">
+   
+<!-- Content -->      
+      <main class="container">
         <h1 class="visually-hidden">Дизайн-студия "Нердс"</h1>
         <!-- Здесь будет слайдер -->
         <section class="advantages">
@@ -80,26 +84,65 @@
         <section class="partners">
             <h2 class="visually-hidden">Партнеры</h2>
             <ul class="partners-list">
-                <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTMAcademy</a></li>
-                <li class="partners-item"><a href="#">Барбершоп Бородинский</a></li>
-                <li class="partners-item"><a href="#">Pink</a></li>
-                <li class="partners-item"><a href="#">Mishka</a></li>
+                <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-1.png" width="199" height="68"  alt="HTMAcademy"></a>
+                </li>
+                <li class="partners-item"><a href="#" target="_blank"><img src="img/logo-2.png" width="199px" height="68px"  alt="Барбершоп Бородинский"></a>
+                </li>
+                <li class="partners-item"><a href="#" target="_blank"><img src="img/logo-3.png" width="199" height="68"  alt="Pink"></a>
+                </li>
+                <li class="partners-item"><a href="#" target="_blank"><img src="img/logo-4.png" width="199" height="68"  alt="Mishka"></a>
+                </li>
             </ul>
         </section>
     </main>
+      
+<!-- Footer -->      
     <footer class="main-footer">
-        <!-- Здесь будет карта -->
+        <section class="map">
+            <h2 class="visually-hidden">Где мы находимся</h2>
+            <img src="img/map.jpg" width="1440" height="416" alt="Адрес компании: Санкт-Петербург, 
+ул. Б. Конюшенная, д. 19/8">
+            <section class="map contact-us">
+                <p class="contact-us-name"></p>
+                <p class="contact-us-description"></p>
+                <button class="contact-us-button" type="button">Напишите нам</button>
+            </section>
+        </section>
         <div class="footer-social">
             <ul>
-                <li><a class="social-btn social-btn-vk" href="#">В Контакте</a></li>
-                <li><a class="social-btn social-btn-facebook" href="#">Facebook</a></li>
-                <li><a class="social-btn social-btn-instagram" href="#">Instagram</a></li>
+                <li><a class="social-btn social-btn-vk" href="#" aria-label="Нердс в Вконтакте"></a>
+                </li>
+                <li><a class="social-btn social-btn-facebook" href="#" aria-label="Нердс в Фейсбуке"></a>
+                </li>
+                <li><a class="social-btn social-btn-instagram" href="#" aria-label="Нердс в Инстаграме"></a>
+                </li>
             </ul>
         </div>
         <div class="footer-promo">
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
+
+      <section id="contactus" class="modal modal-contactus">
+        <h2>Напишите нам</h2>
+        <form class="contactus-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contactus-item">
+            <label for="contactus-name">Ваше имя:</label>
+            <input id="contactus-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+            <p class="contactus-item">
+            <label for="contactus-email">Ваш email:</label>
+            <input id="contactus-email" type="text" name="email" value="" placeholder="email@example.com" required>
+          </p>
+          <p class="contactus-item">
+            <label for="contactus-letter">Текст письма</label>
+            <input id="contactus-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+          </p>
+          <button class="contactus-button" type="submit" >Отправить</button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>  
+      </section>
+        
     </footer>
   </body>
 </html>

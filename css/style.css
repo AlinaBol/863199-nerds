@@ -1,0 +1,12 @@
+
+.partners-item {
+     opacity: 0.2;
+}
+
+.partners-item:hover, :focus {
+    opacity: 1;
+}
+
+.partners-item:active {
+    opacity: 0.1;
+}
