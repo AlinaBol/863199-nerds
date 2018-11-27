@@ -3,7 +3,8 @@
      opacity: 0.2;
 }
 
-.partners-item:hover, :focus {
+.partners-item:hover, 
+.partners-item:focus {
     opacity: 1;
 }
 
