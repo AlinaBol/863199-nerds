@@ -14,21 +14,37 @@
                 <img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип дизайн-студии Нёрдс">
             </a>
             <ul class="site-navigation">
-                <li><a href="about.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="about.html">Студия</a>
+                </li>
+                <li><a href="clients.html">Клиенты</a>
+                </li>
+                <li><a href="catalog.html">Магазин</a>
+                </li>
+                <li><a href="contacts.html">Контакты</a>
+                </li>
             </ul>  
             <ul class="user-navigation">
                 <li><a class="main-cart" href="cart.html">Корзина</a></li>
             </ul>    
         </nav>
     </header>
-   
+<!-- Здесь будет Slides --> 
+      <section class="slides">
+        <ul class="slides-switches">
+          <li class="slides-radio">
+              <button class="slide-btn">Первый слайд</button>
+          </li>
+          <li class="slides-radio">
+              <button class="slide-btn">Второй слайд</button>
+          </li>
+          <li class="slides-radio">
+              <button class="slide-btn">Третий слайд</button>
+          </li>
+        </ul>
+      </section>
 <!-- Content -->      
       <main class="container">
         <h1 class="visually-hidden">Дизайн-студия "Нердс"</h1>
-        <!-- Здесь будет слайдер -->
         <section class="advantages">
         <h2 class="visually-hidden">Услуги</h2>
             <ul class="advantages-list">
@@ -52,45 +68,54 @@
                 </li>
             </ul>  
         </section>
-        <div class="studio">
-            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <div class="about">
+            <b class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="studio-list">Выполняем заказы на разработку:</p>
-                <ul>
-                    <li class="studio-item">Веб-сайтов любой сложности</li>
-                    <li class="studio-item">Мобильных приложений для iOS и Android</li>
-                    <li class="studio-item">Слайдшоу и видео для корпоративных презентаций</li>
+            <h4>Выполняем заказы на разработку:</h4>
+                <ul class="order-list">
+                    <li class="order-item">Веб-сайтов любой сложности</li>
+                    <li class="order-item">Мобильных приложений для iOS и Android</li>
+                    <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
         </div>
         <div class="benefit">
             <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип Нердс яркий">
-            <p class="benefit-list">с 2004 года Любим точность во всем:</p>
-            <ul>
-                <li class="benefit-item">
-                    <b>146<span class="percent">%</span></b>
-                    <p>Уровень самоотдачи</p>
+            <h4>с 2004 года Любим точность во всем:</h4>
+            <table class="benefit-list">
+                <tr>
+                    <th>146<span class="percent">%</span></th>
+                    <th>100<span class="percent">%</span></th>
+                    <th>50<span class="percent">%</span></th>
+                </tr>
+                <tr>
+                    <td>Уровень самоотдачи</td>
+                    <td>Соблюдение сроков</td>
+                    <td>Минимальная предоплата</td>
+                </tr>
+            </table>
+          </div>
+        <section class="clients">
+            <h2 class="visually-hidden">Наши клиенты</h2>
+            <ul class="clients-list">
+                <li class="clients-item">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                        <img src="img/logo-1.png" width="199" height="68"  alt="HTMAcademy">
+                    </a>    
                 </li>
-                <li class="benefit-item">
-                    <b>100<span class="percent">%</span></b>
-                    <p>Соблюдение сроков</p>
+                <li class="clients-item">
+                    <a href="#" target="_blank">
+                        <img src="img/logo-2.png" width="199px" height="68px"  alt="Барбершоп Бородинский">
+                    </a>
                 </li>
-                <li class="benefit-item">
-                    <b>50<span class="percent">%</span></b>
-                    <p>Минимальная предоплата</p>
+                <li class="clients-item">
+                    <a href="#" target="_blank">
+                        <img src="img/logo-3.png" width="199" height="68"  alt="Pink">
+                    </a>
                 </li>
-            </ul>
-        </div>
-        <section class="partners">
-            <h2 class="visually-hidden">Партнеры</h2>
-            <ul class="partners-list">
-                <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-1.png" width="199" height="68"  alt="HTMAcademy"></a>
-                </li>
-                <li class="partners-item"><a href="#" target="_blank"><img src="img/logo-2.png" width="199px" height="68px"  alt="Барбершоп Бородинский"></a>
-                </li>
-                <li class="partners-item"><a href="#" target="_blank"><img src="img/logo-3.png" width="199" height="68"  alt="Pink"></a>
-                </li>
-                <li class="partners-item"><a href="#" target="_blank"><img src="img/logo-4.png" width="199" height="68"  alt="Mishka"></a>
+                <li class="clients-item">
+                    <a href="#" target="_blank"><img src="img/logo-4.png" width="199" height="68"  alt="Mishka">
+                    </a>
                 </li>
             </ul>
         </section>
@@ -102,8 +127,7 @@
             <img src="img/map.jpg" width="1440" height="416" alt="Адрес компании: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             <section class="map contact-us">
                 <p class="contact-us-name">NЁRDS DESIGN STUDIO</p>
-                <p class="contact-us-address">191186, Санкт-Петербург, 
-ул. Б. Конюшенная, д. 19/8
+                <p class="contact-us-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p class="contact-us-tel">тел. +7 (812) 275-75-75</p>
                 <a class="contact-us-btn" href="#">Напишите нам</a>
             </section>
@@ -131,8 +155,9 @@
         
         <!-- Footer -->      
     <footer class="main-footer">
-        <div class="footer-social">
-            <ul>
+        <section class="footer-social">
+            <h2 class="visually-hidden">Мы в соцсетях</h2>
+            <ul class="social-btn">
                 <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 </li>
                 <li><a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
@@ -140,7 +165,7 @@
                 <li><a class="social-btn social-btn-instagram" href="#">Инстаграм</a>
                 </li>
             </ul>
-        </div>
+        </section>
         <div class="footer-promo">
             <b class="promo-slogan">Давайте дружить, это выгодно!</b>
             <p class="promo-discount">Скидка 10% для друзей из социальных сетей.</p>
