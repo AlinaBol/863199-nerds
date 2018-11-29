@@ -48,20 +48,14 @@ a {
     color: #000000;
 }
 
-.slides-switches {
+.slides-switches,
+.advantages-list,
+.clients-list {
   list-style: none;
 }
 
-.advantages-list {
-  list-style: none;
-}
- 
 .slides {
 background-color: #eeeeee;
-}
-
-.advantages-list {
-  list-style: none;
 }
 
 .advantages-item {
@@ -77,9 +71,10 @@ background-color: #eeeeee;
     border-bottom: #000000;
 }
 
+.button,
 .advantages-button {
   font: inherit;
-
+  background-color: #fb565a;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -99,29 +94,25 @@ background-color: #eeeeee;
     background-color: #efc849;
 }
 
-.button {
-  font: inherit;
-  background-color: #fb565a;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-}
-
 .button:hover,
 .button:focus {
-  background-color: #d7373b;
+  background-color: #e74246;
 }
 
 .button:active {
+  background-color: #d7373b;
+}
+
+.button:active,
+.advantages-button:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
 .about p,
 .advantages-item p,
 .order-item,
-.benefit-list td {
+.benefit-list td,
+.contactus-item {
     text-transform: none;
     color: #283136;
 }
@@ -131,8 +122,8 @@ background-color: #eeeeee;
 }
 
 .percent {
-    font-size: 22.5px;
-
+    font-size: 50%;
+    vertical-align: super;
 }
 
 .clients {
@@ -167,4 +158,34 @@ background-color: #eeeeee;
 .promo-discount {
     text-transform: none;
     color: #444444;
+}
+
+.contactus-item input {
+  border-color: #d7dcde;
+}
+
+.contactus-item input:hover {
+  border-color: #b4b9bb;
+}
+
+.contactus-item input:focus {
+  border-color: #000000;
+}
+
+.contactus-item input:invalid {
+  border-color: #e74246
+}
+
+.modal {
+  color: #000000;
+
+  background-color: #f8f3f0;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: left;
 }
