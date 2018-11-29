@@ -86,12 +86,36 @@ background-color: #eeeeee;
     background-color: #fb565a;
 }
 
+.advantages-button-web:hover {
+    background-color: #e74246;
+}
+
+.advantages-button-web:active {
+    background-color: #d7373b;
+}
+
 .advantages-button-app {
     background-color: #00ca74;
 }
 
+.advantages-button-app:hover {
+    background-color: #00bc6c;
+}
+
+.advantages-button-app:active {
+    background-color: #00aa62;
+}
+
 .advantages-button-presentation {
     background-color: #efc849;
+}
+
+.advantages-button-presentation:hover {
+    background-color: #eab534;
+}
+
+.advantages-button-presentation:active {
+    background-color: #e5a722;
 }
 
 .button:hover,
