@@ -1,13 +1,170 @@
+body {
+  margin: 0;
 
-.partners-item {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+    text-decoration: underline;
+    text-decoration-color: #fb565a;
+    color: #000000;
+}
+
+.slides-switches {
+  list-style: none;
+}
+
+.advantages-list {
+  list-style: none;
+}
+ 
+.slides {
+background-color: #eeeeee;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: left;
+}
+
+.advantages h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages {
+    border-bottom: #000000;
+}
+
+.advantages-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  border: none;
+}
+
+.advantages-button-web {
+    background-color: #fb565a;
+}
+
+.advantages-button-app {
+    background-color: #00ca74;
+}
+
+.advantages-button-presentation {
+    background-color: #efc849;
+}
+
+.button {
+  font: inherit;
+  background-color: #fb565a;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #d7373b;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.about p,
+.advantages-item p,
+.order-item,
+.benefit-list td {
+    text-transform: none;
+    color: #283136;
+}
+
+.benefit-list th {
+    font-size: 45px;
+}
+
+.percent {
+    font-size: 22.5px;
+
+}
+
+.clients {
+    border-top: #000000;
+    border-bottom: #000000;
+}
+
+.clients-item {
      opacity: 0.2;
 }
 
-.partners-item:hover, 
-.partners-item:focus {
+.clients-item:hover, 
+.clients-item:focus {
     opacity: 1;
 }
 
-.partners-item:active {
+.clients-item:active {
     opacity: 0.1;
+}
+
+.contact-us-address,
+.contact-us-tel {
+    text-transform: none;
+    color: #666666;
+}
+
+.promo-slogan{
+    text-transform: none;
+    font-size: 36px;
+}
+
+.promo-discount {
+    text-transform: none;
+    color: #444444;
 }
