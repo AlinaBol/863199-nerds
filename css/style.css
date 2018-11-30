@@ -1,44 +1,50 @@
 body {
-  margin: 0;
+    margin: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
 
-  background-color: #ffffff;
+    background-color: #ffffff;
+}
+
+.container-catalog {
+    text-transform: none;
 }
 
 a {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #000000;
-  background-color: #eeeeee;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #eeeeee;
 }
 
 .site-navigation,
 .user-navigation {
-  list-style: none;
+    list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
-  color: #000000;
+    color: #000000;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  color: #fb565a;
+    color: #fb565a;
 }
 
 .site-navigation a:active,
@@ -51,20 +57,20 @@ a {
 .slides-switches,
 .advantages-list,
 .clients-list {
-  list-style: none;
+    list-style: none;
 }
 
 .slides {
-background-color: #eeeeee;
+    background-color: #eeeeee;
 }
 
 .advantages-item {
-  text-align: left;
+    text-align: left;
 }
 
 .advantages h3 {
-  font-size: 24px;
-  line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .advantages {
@@ -72,15 +78,15 @@ background-color: #eeeeee;
 }
 
 .button {
-  font: inherit;
-  background-color: #fb565a;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-  width: 260px;
-  height: 50px;
+    font: inherit;
+    background-color: #fb565a;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    width: 260px;
+    height: 50px;
 }
 
 .advantages-list a,
@@ -136,11 +142,11 @@ background-color: #eeeeee;
 
 .button:hover,
 .button:focus {
-  background-color: #e74246;
+    background-color: #e74246;
 }
 
 .button:active {
-  background-color: #d7373b;
+    background-color: #d7373b;
 }
 
 .button:active,
@@ -153,6 +159,16 @@ background-color: #eeeeee;
     background-color: #eeeeee;
 }
 
+.filter-button:hover,
+.filter-button:focus {
+
+    background-color: #dfdfdf;
+}
+
+.filter-button:active {
+    color: rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
 
 .about p,
 .advantages-item p,
@@ -206,28 +222,32 @@ background-color: #eeeeee;
     color: #444444;
 }
 
+.contactus h2 {
+    text-transform: none;
+}
+
 .contactus-item input {
-  border-color: #d7dcde;
+    border-color: #d7dcde;
 }
 
 .contactus-item input:hover {
-  border-color: #b4b9bb;
+    border-color: #b4b9bb;
 }
 
 .contactus-item input:focus {
-  border-color: #000000;
+    border-color: #000000;
 }
 
 .contactus-item input:invalid {
-  border-color: #e74246
+    border-color: #e74246
 }
 
 .modal {
-  color: #000000;
+    color: #000000;
 
-  background-color: #f8f3f0;
-  background-position: 0 0;
-  background-repeat: repeat;
+    background-color: #f8f3f0;
+    background-position: 0 0;
+    background-repeat: repeat;
 }
 
 .modal h2 {
@@ -236,3 +256,109 @@ background-color: #eeeeee;
     text-align: left;
 }
 
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    background-color: #eeeeee;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 20px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+    color: #283136;
+}
+
+.filter-input:disabled + label {
+    color: #283136;
+
+    opacity: 0.3;
+}
+
+.radio-label,
+.checkbox-label,
+.product-description {
+    color: #283136;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: transparent;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.catalog-item h3 {
+    text-transform: uppercase;
+    font-size: 17.5px;
+    line-height: 30px;
+    font-style: bold;
+    text-align: center;
+}
+
+.catalog-item .button {
+    width: 200px;
+}
+
+.catalog-browser {
+    background-image: url("../img/browser.svg");
+    width: 360px;
+    height: 40px;
+}
+
+.catalog-browser:active {
+    opacity: 0.12; 
+}
+
+.pagination-item a {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+    background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+    border: 3px solid #dbdbdb;
+    background-color: #ffffff;
+}    
