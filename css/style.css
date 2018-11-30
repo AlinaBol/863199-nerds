@@ -71,15 +71,31 @@ background-color: #eeeeee;
     border-bottom: #000000;
 }
 
-.button,
-.advantages-button {
+.button {
   font: inherit;
   background-color: #fb565a;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
-
+  text-transform: uppercase;
   border: none;
+  width: 260px;
+  height: 50px;
+}
+
+.advantages-list a,
+.map a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 160px;
+    height: 50px;
+}
+
+.map a {
+    width: 219px;
 }
 
 .advantages-button-web {
@@ -131,6 +147,12 @@ background-color: #eeeeee;
 .advantages-button:active {
     color: rgba(255, 255, 255, 0.3);
 }
+
+.filter-button {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
 
 .about p,
 .advantages-item p,
@@ -213,3 +235,4 @@ background-color: #eeeeee;
     line-height: 45px;
     text-align: left;
 }
+
