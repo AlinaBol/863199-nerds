@@ -3,7 +3,7 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
     text-transform: uppercase;
 
@@ -165,29 +165,21 @@ a {
 .button {
     font: inherit;
     background-color: #fb565a;
-    text-align: center;
     color: #ffffff;
-    vertical-align: middle;
     text-transform: uppercase;
     border: none;
     width: 260px;
     height: 50px;
 }
 
+.slide a,
 .advantages-list a,
 .map a {
-    display: inline-block;
-    vertical-align: middle;
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
-    width: 160px;
-    height: 50px;
-    line-height: 3;
-}
-
-.map a {
-    width: 219px;
+    padding: 16px 42px;
+    border-radius: 3px;
 }
 
 .advantages-button-web {
@@ -266,13 +258,12 @@ a {
     color: #283136;
 }
 
-.index-columns .container {
+.index-columns .wrapper {
     display: flex;
 }
 
 .index-columns {
     margin-top: 40px;
-    
 }
 
 .about {
@@ -316,9 +307,20 @@ a {
     margin: 0px;
 }
 
-.benefit-list {
-    width: 350px;
-    height: 100px;
+table{
+    margin: 50px 0;
+    text-align: left;    
+    border-spacing: 12px;
+    width: auto;
+}
+
+td,
+th {
+    padding: 5px;
+}
+
+.benefit-wrapper {
+    margin: 0 0px;
 }
 
 .clients-list {
@@ -362,10 +364,6 @@ a {
     color: #444444;
 }
 
-.contactus h2 {
-    text-transform: none;
-}
-
 .contactus-item input {
     border-color: #d7dcde;
 }
@@ -394,6 +392,8 @@ a {
     font-size: 45px;
     line-height: 45px;
     text-align: left;
+    text-transform: none;
+    font-weight: 400;
 }
 
 .page-title {
