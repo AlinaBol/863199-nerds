@@ -1,6 +1,5 @@
 body {
     margin: 0;
-
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -9,6 +8,10 @@ body {
     text-transform: uppercase;
 
     background-color: #ffffff;
+}
+
+.visually-hidden {
+    display: none;
 }
 
 .container-catalog {
@@ -22,22 +25,73 @@ a {
     padding: 0;
 }
 
+.main-header {
+    padding-top: 49px;
+    background: #eeeeee;
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+}
+
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
     color: #000000;
     background-color: #eeeeee;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.main-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 140px;
+}
+
+.user-navigation {
+    width: 65px;
+    text-align: left;
 }
 
 .site-navigation,
 .user-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation {
+    width: 440px;
+}
+
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation,
+.user-navigation {
+    padding: 0;
+    margin: 0;
+    margin-top: 27px;
 }
 
 .site-navigation a,
 .user-navigation a {
     color: #000000;
+    justify-content: space-between;
 }
 
 .site-navigation a:hover,
@@ -49,9 +103,23 @@ a {
 
 .site-navigation a:active,
 .user-navigation a:active {
-    text-decoration: underline;
-    text-decoration-color: #fb565a;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+    display: inline-block;
+    border-bottom: 2px solid #fb565a;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.8;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
 }
 
 .slides-switches,
@@ -62,10 +130,22 @@ a {
 
 .slides {
     background-color: #eeeeee;
+    padding-top: 30px;
+    min-height: 400px;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-right: 60px;
+    margin-top: 80px;
 }
 
 .advantages-item {
     text-align: left;
+    width: 300px;
 }
 
 .advantages h3 {
@@ -73,8 +153,13 @@ a {
     line-height: 30px;
 }
 
+.advantages p {
+
+}
+
 .advantages {
-    border-bottom: #000000;
+    padding-bottom: 85px;
+    border-bottom: 2px solid #f4f4f4;
 }
 
 .button {
@@ -98,6 +183,7 @@ a {
     text-transform: uppercase;
     width: 160px;
     height: 50px;
+    line-height: 3;
 }
 
 .map a {
@@ -172,6 +258,7 @@ a {
 
 .about p,
 .advantages-item p,
+.slide p,
 .order-item,
 .benefit-list td,
 .contactus-item {
@@ -179,8 +266,45 @@ a {
     color: #283136;
 }
 
+.index-columns .container {
+    display: flex;
+}
+
+.index-columns {
+    margin-top: 40px;
+    
+}
+
+.about {
+    margin: 0;
+    width: 660px;
+    padding-top: 33px;
+    margin-right: 140px
+}
+
+.benefit {
+    width: 360px;
+}
+
 .benefit-list th {
     font-size: 45px;
+}
+
+.about b {
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: none;
+    text-align: left;
+    line-height: 1;
+   }
+
+.about p {
+    margin-bottom: 38px;
+    margin-top: 35px;
+}
+
+.order-list li {
+    padding-bottom: 26px;
 }
 
 .percent {
@@ -188,13 +312,29 @@ a {
     vertical-align: super;
 }
 
-.clients {
-    border-top: #000000;
-    border-bottom: #000000;
+.benefit h4 {
+    margin: 0px;
+}
+
+.benefit-list {
+    width: 350px;
+    height: 100px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f4f4f4;
+    border-top: 2px solid #f4f4f4;
 }
 
 .clients-item {
      opacity: 0.2;
+}
+
+.clients-item {
+    widows: 380px;
+    height: 180px;
 }
 
 .clients-item:hover, 
@@ -259,7 +399,18 @@ a {
 .page-title {
     font-size: 55px;
     line-height: 55px;
+    font-weight: 500;
     background-color: #eeeeee;
+    text-align: center;
+}
+
+.slide b {
+    text-transform: none;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    background-color: #eeeeee;
+    text-align: left;
 }
 
 .filter fieldset {
@@ -269,11 +420,18 @@ a {
 .filter legend {
     font-size: 18px;
     line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .filter ul {
     list-style: none;
     line-height: 20px;
+    margin-bottom: 35px;
+}
+
+.filter li {
+    margin-bottom: 17px;
 }
 
 .filter-input:hover + label,
@@ -316,7 +474,7 @@ a {
     text-transform: uppercase;
     font-size: 17.5px;
     line-height: 30px;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -362,3 +520,32 @@ a {
     border: 3px solid #dbdbdb;
     background-color: #ffffff;
 }    
+
+.main-footer {
+    padding: 20px 0;
+    margin-top: 60px;  
+}
+
+.footer-social,
+.footer-promo {
+    margin: 0;
+}
+
+.footer-social {
+    width: 260px;
+    margin: 0;
+    margin-right: 140px;
+}
+    
+.footer-promo {
+    width: 560px;
+    margin: 0;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.promo-discount {
+line-height: 11px;
+}
