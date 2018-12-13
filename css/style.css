@@ -302,7 +302,7 @@ img {
 }
 
 .index-columns {
-    margin: 40px 0 59px 0;
+    margin: 40px 0 58px 0;
 }
 
 .about {
@@ -414,8 +414,29 @@ img {
     opacity: 0.1;
 }
 
-.contact-us-address,
-.contact-us-tel {
+
+
+.map-wrapper {
+    position: relative;
+}
+
+.contact {
+    position: absolute;
+
+    width: 319px;
+    min-height: 308px;
+    background-color: #ffffff;
+    
+    padding: 40px 50px;
+}
+
+.contact contact-title {
+    text-transform: uppercase;
+    font-size: 1,5px;
+}
+
+.contact-address,
+.contact-tel {
     text-transform: none;
     color: #666666;
 }
@@ -468,7 +489,7 @@ img {
     border-color: #e74246
 }
 
-label {
+.contactus-item label {
     display: block;
     margin-top: 30px;
     margin-bottom: 12px;
@@ -534,7 +555,7 @@ label {
 /** Footer */
 
 .main-footer {
-    margin-top: 80px; 
+    margin: 60px 0; 
 }
 
 .footer-social {
@@ -740,7 +761,7 @@ line-height: 10px;
   content: "";
   
   position: absolute;
-  top: 8px;
+  top: 2px;
   left: 8px;
   z-index: 1;
   
@@ -761,25 +782,25 @@ line-height: 10px;
 
 .slider-item {
   display: none;
-  padding: 78px 0 90px 0;
+  padding:65px 0 93px 0;
 }
 
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 99% -13px;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% -12px;
 }
 
 .slider-item:nth-child(3) {
       background-image: url("../img/slide3.png");
       background-repeat: no-repeat;
-      background-position: 100% 20px;
+      background-position: 100% -15px;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -800,7 +821,7 @@ line-height: 10px;
       content: "";
       position: absolute;
       left: 99%;
-      top: 97%;
+      top: 60%;
       z-index: 2;
       width: 8px;
       height: 8px;
@@ -823,14 +844,28 @@ line-height: 10px;
 .slider-item p {
       max-width: 430px;
       margin: 0;
-      margin-bottom: 38px;
+      margin-bottom: 52px;
       text-transform: none;
 }
 
 .slider-item-button {
-    padding: 13px 54px;
+    padding: 16px 55px;
 }
 
 .contact-us a {
     padding: 15px 50px;
+}
+
+.map p {
+  position: absolute;
+  z-index: 1;
+display: none;
+  margin: 0;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
