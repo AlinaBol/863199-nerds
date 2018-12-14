@@ -1,7 +1,8 @@
+"use strict"
 var link = document.querySelector(".contact-button");
 
 var popup = document.querySelector(".modal-contactus");
-var close = popup.querySelector(".modal-close");
+var close = popup.querySelector("modal-close");
 
 var form = popup.querySelector("form");
 var name = popup.querySelector("[name=name]");
