@@ -25,7 +25,7 @@
                         <a href="clients.html">Клиенты</a>
                     </li>
                     <li class="site-navigation-current">
-                        <a href="catalog.html">Магазин</a>
+                        <a>Магазин</a>
                     </li>
                     <li>
                         <a href="contacts.html">Контакты</a>
@@ -96,10 +96,37 @@
                      <button type="submit" class="button filter-button">Показать</button>
                  </form>
              </section>
+              
+        <div class="page-wrapper">
+             <section class="sorting">
+              <div class="container">
+                <ul class="sorting-title">
+                    <li><p>Сортировать:</p></li>
+                </ul>
+                <ul class="sorting-list">
+                  <li><a href="#" class="sorting-criterion active">По цене</a></li>
+                  <li><a href="#" class="sorting-criterion">По типу</a></li>
+                  <li><a href="#" class="sorting-criterion">По названию</a></li>
+                </ul>
+
+                <div class="sorting-control">
+                  <a class="icon-dir icon-down active">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
+                      </svg>
+                  </a>
+                  <a class="icon-dir icon-up">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                      </svg>
+                  </a>
+                  </div>
+              </div>
+             </section>
+                
              <section class="catalog">
                  <h2 class="visually-hidden">Список шаблонов</h2>
                  <ul class="catalog-list">
                      <li class="catalog-item">
+                        <div class="catalog-wrapper">
                          <div class="catalog-browser"></div>
                          <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Седона">
                          <section class="catalog-item-product" tabindex="0">
@@ -107,17 +134,21 @@
                              <p class="product-description">Информационный сайт<br>для туристов</p>
                              <button class="button product-button" type="button">9 900 руб.</button>
                          </section>
+                      </div>
                      </li>
                 <li class="catalog-item">
+                   <div class="catalog-wrapper"> 
                     <div class="catalog-browser"></div>
                     <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Пинк">
                     <section class="catalog-item-product" tabindex="0">
                         <h3 class="product-title">Pink app</h3>
                         <p class="product-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
                         <button class="button product-button" type="button">9 900 руб.</button>
-                   </section>    
+                   </section>  
+                 </div>
                 </li>
                 <li class="catalog-item">
+                   <div class="catalog-wrapper"> 
                     <div class="catalog-browser"></div>
                     <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп">
                     <section class="catalog-item-product" tabindex="0">
@@ -125,8 +156,10 @@
                         <p class="product-description">Сайт салона красоты.<br>Для мужчин, да.</p>
                         <button class="button product-button" type="submit">9 900 руб.</button> 
                    </section>
+                  </div>
                 </li>
                 <li class="catalog-item">
+                   <div class="catalog-wrapper"> 
                     <div class="catalog-browser"></div>
                     <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Мишка">
                     <section class="catalog-item-product" tabindex="0">
@@ -134,8 +167,10 @@
                         <p class="product-description">Интернет-магазин<br>вязаных игрушек</p>
                         <button class="button product-button" type="submit">9 900 руб.</button>
                    </section>
+                  </div>
                 </li>
                 <li class="catalog-item">
+                   <div class="catalog-wrapper"> 
                     <div class="catalog-browser"></div>
                     <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон Аплюс">
                     <section class="catalog-item-product" tabindex="0">
@@ -143,8 +178,10 @@
                         <p class="product-description">Лендинг курсов повышения<br>квалификации</p>
                         <button class="button product-button" type="submit">9 900 руб.</button>
                     </section>
+                   </div>
                 </li>
                 <li class="catalog-item">
+                   <div class="catalog-wrapper"> 
                     <div class="catalog-browser"></div>  
                     <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
                     <section class="catalog-item-product" tabindex="0">
@@ -152,6 +189,7 @@
                         <p class="product-description">Промо-сайт производителя<br>крафтового кваса</p>
                         <button class="button product-button" type="submit">9 900 руб.</button>
                     </section>
+                   </div>
                 </li>
             </ul>
             <ul class="pagination-list">
@@ -166,6 +204,7 @@
             </ul>
         </section>
        </div>
+      </div>
      </div>
     </main>
             
