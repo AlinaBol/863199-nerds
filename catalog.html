@@ -44,10 +44,30 @@
 <!-- Content -->      
     <main class="container-catalog">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-         <div class="container">
-            <div class="catalog-columns">
-             <section class="filters">
-                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
+      <div class="container">
+        <div class="catalog-columns">
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр шаблонов</h2>
+                
+                 <section class="range">
+                      <p class="range-title">Стоимость:</p> <div class="range-wrapper">
+                        <div class="range-control">
+                          <div class="range-maxline">
+                              <div class="range-line"></div>
+                          </div>
+                          <div class="tab tab-min">
+                              <div class="point"></div>
+                          </div>
+                          <div class="tab tab-max"><div class="point"></div>
+                          </div>
+                        </div>
+                        <div class="range-price">
+                          от <input class="price-min" type="text" value="0">
+                          до <input class="price-max" type="text" value="15 000">
+                        </div>
+                      </div>
+                 </section>
+                 
                  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                      <fieldset>
                          <legend>Сетка:</legend>
@@ -95,14 +115,12 @@
     
                      <button type="submit" class="button filter-button">Показать</button>
                  </form>
-             </section>
+            </section>
               
-        <div class="page-wrapper">
+            <div class="page-wrapper">
              <section class="sorting">
               <div class="container">
-                <ul class="sorting-title">
-                    <li><p>Сортировать:</p></li>
-                </ul>
+                <p class="sorting-title">Сортировать:</p>
                 <ul class="sorting-list">
                   <li><a href="#" class="sorting-criterion active">По цене</a></li>
                   <li><a href="#" class="sorting-criterion">По типу</a></li>
@@ -111,10 +129,12 @@
 
                 <div class="sorting-control">
                   <a class="icon-dir icon-down active">
+                      <span class="visually-hidden">Вниз</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
                       </svg>
                   </a>
                   <a class="icon-dir icon-up">
+                      <span class="visually-hidden">Вверх</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
                       </svg>
                   </a>
@@ -203,18 +223,17 @@
                 </li>
             </ul>
         </section>
-       </div>
+            </div>
+        </div>
       </div>
-     </div>
     </main>
             
-        
 <!-- Map --> 
     <div class="map-wrapper">
       <section class="map">
             <h2 class="visually-hidden">Где мы находимся</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586871!2d30.320853351487205!3d59.93871648178722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sit!2sit!4v1544729823114" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <span class="visually-hidden">Адрес компании: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></span>
+          <p><img src="img/map.jpg" width="1440" height="416" alt="Адрес компании: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></p>
       </section>
       <section class="contact">
             <p class="contact-title">NЁRDS DESIGN STUDIO</p>
@@ -263,7 +282,7 @@
         <form class="contactus-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="contactus-item">
             <label for="contactus-name">Ваше имя:</label>
-            <input id="contactus-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            <input id="contactus-name" type="text" name="username" value="" placeholder="Имя Фамилия" autofocus>
           </p>
             <p class="contactus-item">
             <label for="contactus-email">Ваш email:</label>
@@ -275,10 +294,9 @@
           </p>
           <button class="button contactus-button" type="submit" >Отправить</button>
         </form>
-          <button class="modal-close" type="button">Закрыть</button>  
+          <button class="close modal-close" type="button">Закрыть</button>  
       </section>
       
-   <script src="js/script.js"></script>   
-      
+   <script src="js/script.js"></script>     
   </body>
 </html>
