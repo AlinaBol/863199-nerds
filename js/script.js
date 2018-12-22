@@ -1,6 +1,6 @@
 "use strict"
 var link = document.querySelector(".contact-button");
-
+var sentbutton = document.querySelector(".contactus-button");
 var popup = document.querySelector(".modal-contactus");
 var close = popup.querySelector(".modal-close");
 
@@ -42,12 +42,11 @@ close.addEventListener("click", function (evt) {
 });      
 
 
-form.addEventListener("submit", function (evt) {
-    if (!username.value || !email.value || !letter.value) {
+sentbutton.addEventListener("click", function (evt) {
+    if (!email.value) {
       evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
+        popup.classList.toggle("modal-error");
+        
     } else {
         if (isStorageSupport) {
             localStorage.setItem("username", username.value);
