@@ -11,6 +11,13 @@ var letter = popup.querySelector("[name=letter]");
 
 var isStorageSupport = true; 
 var storage = "";
+var removeClass = function (elem, className) {
+  setTimeout(function () {
+    if (elem.classList.contains(className)) {
+      elem.classList.remove(className);
+    }
+  }, 1000)
+};
   
 try {
     storage = localStorage.getItem("username");
@@ -27,6 +34,8 @@ try {
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
+    popup.classList.add("modal-animate");
+    removeClass(popup, "modal-animate");
       
     if (storage) {
         username.value = storage;
@@ -45,8 +54,8 @@ close.addEventListener("click", function (evt) {
 sentbutton.addEventListener("click", function (evt) {
     if (!email.value) {
       evt.preventDefault();
-        popup.classList.toggle("modal-error");
-        
+        popup.classList.add("modal-error");
+        removeClass(popup, "modal-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("username", username.value);
