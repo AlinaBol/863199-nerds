@@ -68,7 +68,7 @@ img {
 
 .main-header {
     color: #000000;
-    background: #eeeeee;
+    background-color: #eeeeee;
     padding-top: 52px;
 }
 
@@ -133,9 +133,7 @@ img {
     height: 18px;
     left: 6px;
     top: 7px;
-    background-image: url("../img/cart-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: #a6a6a6 url("../img/cart-icon.svg") no-repeat 0 0;
     opacity: 0.35;
 }
 
@@ -248,13 +246,16 @@ img {
 
 .button:active {
     background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .red {
     background-color: #fb565a;
 }
 
-.red:hover {
+.red:hover,
+.red:focus {
     background-color: #e74246;
 }
 
@@ -266,7 +267,8 @@ img {
     background-color: #00ca74;
 }
 
-.green:hover {
+.green:hover,
+.green:focus {
     background-color: #00bc6c;
 }
 
@@ -278,7 +280,8 @@ img {
     background-color: #efc849;
 }
 
-.yellow:hover {
+.yellow:hover,
+.yellow:focus {
     background-color: #eab534;
 }
 
@@ -289,6 +292,8 @@ img {
 .button:active,
 .advantages-button:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .filter-button {
@@ -467,7 +472,7 @@ img {
 .contact {
     position: absolute;
     top: 53px;
-    left: 60px;
+    left: 140px;
     width: 319px;
     min-height: 308px;
     color: #000000;
@@ -806,7 +811,8 @@ img {
     border-radius: 50%; 
 }
    
-.social-btn:hover {
+.social-btn:hover,
+.social-btn:focus {
     background-color: #e74246;
 }
 
@@ -853,10 +859,10 @@ footer .container {
 .slider-controls {
     position: absolute;
     left: 50%;
-    bottom: 102px;
+    bottom: 96px;
     z-index: 2;
   
-    width: 160px;
+    width: 108px;
     height: 18px;
 
     text-align: center;
@@ -868,12 +874,15 @@ footer .container {
 
 .slider-controls label {
     position: relative;
-    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    
+    margin: 0 9px;
     
     width: 18px;
     height: 18px;
-    padding: 8px;
   
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -881,14 +890,14 @@ footer .container {
     content: "";
   
     position: absolute;
-    top: 1px;
-    left: 8px;
+    top: -2px;
+    left: 0px;
     z-index: 1;
   
     width: 18px;
     height: 18px;
   
-    background: #ffffff;
+    background-color: #ffffff;
     
     border-radius: 50%;
 }
@@ -906,21 +915,15 @@ footer .container {
 }
 
 .slider-item:nth-child(1) {
-    background-image: url("../img/slide1.png");
-    background-repeat: no-repeat;
-    background-position: 99% -13px;
+    background: #eeeeee url("../img/slide1.png") no-repeat 99% -13px;
 }
 
 .slider-item:nth-child(2) {
-    background-image: url("../img/slide2.png");
-    background-repeat: no-repeat;
-    background-position: 100% -12px;
+    background: #eeeeee url("../img/slide2.png") no-repeat 100% -12px;
 }
 
 .slider-item:nth-child(3) {
-    background-image: url("../img/slide3.png");
-    background-repeat: no-repeat;
-    background-position: 100% -15px;
+    background: #eeeeee url("../img/slide3.png") no-repeat 100% -15px;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -940,8 +943,8 @@ footer .container {
 #product-3:checked ~ .slider-controls .slider-controls-item--3::before {
    content: "";    
     position: absolute;
-    left: 80%;
-    top: 35%;
+    left: 30%;
+    top: 15%;
     z-index: 2;
     width: 8px;
     height: 8px;
@@ -970,16 +973,18 @@ footer .container {
 }
 
 .slider-item-button {
-    padding: 13px 54px;
-    max-width: 240px;
+    display: block;
+    padding: 13px 0;
+    width: 240px;
+    text-align: center;
 }
 
 .contact-us a {
     padding: 15px 50px;
 }
 
-.map {
-    background-image: url("../img/map.jpg"); 
+.map { 
+    background: #e9e5dc url("../img/map.jpg"); 
     position: relative;
     width: 100%;
     height: 416px;
@@ -988,6 +993,11 @@ footer .container {
 
 .map iframe {
     position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 416px;
+    border: 0;
 }
 
 /** Catalog - Filters */
@@ -1029,7 +1039,7 @@ footer .container {
     
     margin-bottom: 11px;
     padding: 0 20px;
-    background: #eeeeee;
+    background-color: #eeeeee;
 }
 
 .range-maxline {
@@ -1045,7 +1055,7 @@ footer .container {
 .range-line {
     height: 2px;
     width: 152px;
-    background:#4fd69d;
+    background-color: #4fd69d;
 }
 
 .tab {
@@ -1090,7 +1100,7 @@ footer .container {
     
     border: none;
     color: #283136;
-    background: #eeeeee;
+    background-color: #eeeeee;
     border-radius: 3px;
     text-align: center;
 }
@@ -1147,14 +1157,19 @@ footer .container {
     width: 27px;
     height: 23px;
 
-    background-image: url("../img/checkbox-off.svg");
-    background-repeat: no-repeat;
+    background: #ffffff url("../img/checkbox-off.svg") no-repeat;
     opacity: 0.4;
 }
 
 .filter-input-checkbox:not(:checked):hover + label:hover::before,
 .filter-input:checked:hover + label:hover::after,
 .filter-input-radio:hover + label:hover::before {
+    opacity: 1;
+}
+
+.filter-input-checkbox:not(:checked):focus + label:focus::before,
+.filter-input:checked:focus + label:focus::after,
+.filter-input-radio:focus + label:focus::before {
     opacity: 1;
 }
 
@@ -1168,8 +1183,7 @@ footer .container {
     width: 27px;
     height: 23px;
     
-    background-image: url("../img/checkbox-on.svg");
-    background-repeat: no-repeat;
+    background: #ffffff url("../img/checkbox-on.svg") no-repeat;
     opacity: 0.4;
 }
 
@@ -1202,13 +1216,15 @@ footer .container {
 }
 
 .filter-input:disabled + label::before,
-.filter-input:disabled:hover + label:hover::before {
+.filter-input:disabled:hover + label:hover::before,
+.filter-input:disabled:focus + label:focus::before {
     cursor: not-allowed;
     opacity: 0.1;
 }
 
 .filter-input:disabled + label,
-.filter-input:disabled:hover + label {
+.filter-input:disabled:hover + label,
+.filter-input:disabled:focus + label {
     cursor: not-allowed;
     opacity: 0.3;
 }
@@ -1288,19 +1304,21 @@ footer .container {
 }
 
 .sorting-list a:hover,
-.sorting-control a:hover {
+.sorting-control a:hover,
+.sorting-list a:focus,
+.sorting-control a:focus {
     opacity: 0.6;
 }
 
-.sorting-list li a:active,
-.sorting-list li .active,
+.sorting-list a:active,
+.sorting-list .active,
 .sorting-control a:active,
 .sorting-control .active {
     opacity: 1;
 }
 
 .icon-up {
-    padding-left: 14px;
+    margin-left: 14px;
 }
 
 /** Catalog-items */
@@ -1338,7 +1356,7 @@ footer .container {
     margin: 0 40px 33px 0;
 }
 
-.catalog-item img {
+.catalog-wrapper img {
     display: block;
 }
 
@@ -1346,17 +1364,29 @@ footer .container {
     margin-right: 0;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
     -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.catalog-browser {
-    background-image: url("../img/browser.svg");
-    width: 360px;
-    height: 40px;
-    opacity: 0.12; 
+.catalog-wrapper {
     position: relative;
+}
+
+.catalog-wrapper::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 360px;
+    left: 0;
+    top: 0;
+    background: #4d4d4d url("../img/browser.svg") no-repeat 0 0;
+    opacity: 0.12;
+}
+
+.product-photo { 
+    padding-top: 40px;
 }
 
 .catalog-item-product {
@@ -1372,13 +1402,17 @@ footer .container {
     padding: 0px 80px;
     color: #000000;
     background-color: #eeeeee;
+    
+    outline: inherit;
 }
 
-.catalog-wrapper:hover .catalog-item-product {
+.catalog-wrapper:hover .catalog-item-product,
+.catalog-wrapper:focus .catalog-item-product {
     display: block;
 }
 
-.catalog-wrapper:hover .catalog-browser {
+.catalog-wrapper:hover::before,
+.catalog-wrapper:focus::before {
     opacity: 1;
 }
 
@@ -1398,7 +1432,7 @@ footer .container {
     padding: 0px 60px;
 }
 
-.catalog-item h3 {
+.catalog-item-product h3 {
     font-size: 17.5px;
     line-height: 30px;
     font-weight: bold;
@@ -1406,7 +1440,7 @@ footer .container {
     margin-top: 27px;
 }
 
-.catalog-item button {
+.catalog-item-product button {
     padding: 13px 60px;
 }
 
