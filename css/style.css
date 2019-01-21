@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -38,7 +38,6 @@ input[type="radio"].visually-hidden {
     white-space: nowrap;
 
     -webkit-clip-path: inset(100%);
-
             clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -133,7 +132,7 @@ img {
     height: 18px;
     left: 6px;
     top: 7px;
-    background: #a6a6a6 url("../img/cart-icon.svg") no-repeat 0 0;
+    background: #eeeeee url("../img/cart-icon.svg") no-repeat 0 0;
     opacity: 0.35;
 }
 
@@ -237,6 +236,7 @@ img {
     
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -247,7 +247,8 @@ img {
 .button:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .red {
@@ -289,13 +290,6 @@ img {
     background-color: #e5a722;
 }
 
-.button:active,
-.advantages-button:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #d7373b;
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-}
-
 .filter-button {
     color: #000000;
     background-color: #eeeeee;
@@ -333,7 +327,6 @@ img {
     text-transform: none;
     color: #283136;
 }
-
 
 /** Main part */
 .index-columns .wrapper {
@@ -507,96 +500,96 @@ img {
 
 /**  Modal */
 @-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
+    0% {
+        -webkit-transform: translateY(-2000px);
+                transform: translateY(-2000px);
+    }
 
-  70% {
+    70% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
-  }
+    }
 
-  90% {
+    90% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-  }
+    }
 
-  100% {
+    100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
+    }
 }
 @keyframes bounce {
-  0% {
+    0% {
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
-  }
+    }
 
-  70% {
+    70% {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
-  }
+    }
 
-  90% {
+    90% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-  }
+    }
 
-  100% {
+    100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
+    }
 }
 
 @-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px);
-  }
+    }
 
-  20%,
-  40%,
-  60%,
-  80% {
+    20%,
+    40%,
+    60%,
+    80% {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
-  }
+    }
 }
 
 @keyframes shake {
-  0%,
-  100% {
+    0%,
+    100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-  }
+    }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px);
-  }
+    }
 
-  20%,
-  40%,
-  60%,
-  80% {
+    20%,
+    40%,
+    60%,
+    80% {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
-  }
+    }
 }
 
 .modal {
@@ -604,7 +597,6 @@ img {
     color: #000000;
     
     -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-    
             box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
     background-color: #ffffff;
 }
@@ -863,7 +855,7 @@ footer .container {
     z-index: 2;
   
     width: 108px;
-    height: 18px;
+    height: 20px;
 
     text-align: center;
     font-size: 0;
@@ -890,7 +882,7 @@ footer .container {
     content: "";
   
     position: absolute;
-    top: -2px;
+    top: 0px;
     left: 0px;
     z-index: 1;
   
@@ -900,6 +892,15 @@ footer .container {
     background-color: #ffffff;
     
     border-radius: 50%;
+}
+
+.slider-controls label:hover::after {
+    background-color: #d5d5d5;
+}
+
+input[type="radio"]:focus ~ .slider-controls label::after {
+    -webkit-box-shadow: 0px 0px 1px 4px #649cef;
+            box-shadow: 0px 0px 1px 4px #649cef;
 }
 
 .slider-list {
@@ -941,10 +942,10 @@ footer .container {
 #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before,
 #product-3:checked ~ .slider-controls .slider-controls-item--3::before {
-   content: "";    
+    content: "";    
     position: absolute;
     left: 30%;
-    top: 15%;
+    top: 25%;
     z-index: 2;
     width: 8px;
     height: 8px;
@@ -984,7 +985,7 @@ footer .container {
 }
 
 .map { 
-    background: #e9e5dc url("../img/map.jpg"); 
+    background: #ffffff url("../img/map.jpg"); 
     position: relative;
     width: 100%;
     height: 416px;
@@ -994,7 +995,7 @@ footer .container {
 .map iframe {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0;
     width: 100%;
     height: 416px;
     border: 0;
@@ -1142,9 +1143,9 @@ footer .container {
     display: block;
     cursor: pointer;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
     color: #283136;
 }
 
@@ -1167,9 +1168,9 @@ footer .container {
     opacity: 1;
 }
 
-.filter-input-checkbox:not(:checked):focus + label:focus::before,
-.filter-input:checked:focus + label:focus::after,
-.filter-input-radio:focus + label:focus::before {
+.filter-input-checkbox:not(:checked):focus ~ label::before,
+.filter-input:checked:focus ~ label::after,
+.filter-input-radio:focus ~ label::before {
     opacity: 1;
 }
 
@@ -1381,7 +1382,7 @@ footer .container {
     width: 360px;
     left: 0;
     top: 0;
-    background: #4d4d4d url("../img/browser.svg") no-repeat 0 0;
+    background: #ffffff url("../img/browser.svg") no-repeat 0 0;
     opacity: 0.12;
 }
 
@@ -1429,10 +1430,11 @@ footer .container {
 }
 
 .product-wide {
-    padding: 0px 60px;
+    padding: 0px 50px;
 }
 
-.catalog-item-product h3 {
+.catalog-item-product a {
+    display: block;
     font-size: 17.5px;
     line-height: 30px;
     font-weight: bold;

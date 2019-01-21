@@ -15,31 +15,30 @@
                     <a class="main-header-logo" href="index.html">
                         <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
                     </a>
-                <div class="main-wrapper">
-                    <ul class="site-navigation">
-                        <li>
-                            <a href="about.html">Студия</a>
-                        </li>
-                        <li>
-                            <a href="clients.html">Клиенты</a>
-                        </li>
-                        <li class="site-navigation-current">
-                            <a>Магазин</a>
-                        </li>
-                        <li>
-                            <a href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>  
-                    <ul class="user-navigation">
-                        <li>
-                            <a class="main-cart" href="cart.html">Корзина</a>
-                        </li>
-                    </ul>  
-                </div>
-            </nav>
-          </div>      
+                    <div class="main-wrapper">
+                        <ul class="site-navigation">
+                            <li>
+                                <a href="about.html">Студия</a>
+                            </li>
+                            <li>
+                                <a href="clients.html">Клиенты</a>
+                            </li>
+                            <li class="site-navigation-current">
+                                <a>Магазин</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>  
+                        <ul class="user-navigation">
+                            <li>
+                                <a class="main-cart" href="cart.html">Корзина</a>
+                            </li>
+                        </ul>  
+                    </div>
+                </nav>
+            </div>      
         </header>
-
 <!-- Content -->      
         <main class="container-catalog">
             <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -62,8 +61,8 @@
                                     </div>
                                 </div>
                                 <div class="range-price">
-                                    от <input class="price-min" type="text" value="0">
-                                    до <input class="price-max" type="text" value="15&nbsp;000">
+                                    от<input class="price-min" type="text" value="0">
+                                    до<input class="price-max" type="text" value="15&nbsp;000">
                                 </div>
                             </div>
                         </section>
@@ -118,19 +117,25 @@
                             <div class="container-sorting">
                                 <p class="sorting-title">Сортировать:</p>
                                 <ul class="sorting-list">
-                                    <li><a href="#" class="sorting-criterion active">По цене</a></li>
-                                    <li><a href="#" class="sorting-criterion">По типу</a></li>
-                                    <li><a href="#" class="sorting-criterion">По названию</a></li>
+                                    <li>
+                                        <a href="#" class="sorting-criterion active">По цене</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sorting-criterion">По типу</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sorting-criterion">По названию</a>
+                                    </li>
                                 </ul>
                                 <div class="sorting-control">
-                                    <a href="#" class="icon-dir icon-down active">
-                                        <span class="visually-hidden">Вниз</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
+                                    <a href="#" class="icon-dir icon-down active"><span class="visually-hidden">Вниз</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                            <path fill="#231F20" d="M5.5 10L0 0h11"/>
                                         </svg>
                                     </a>
-                                    <a href="#" class="icon-dir icon-up">
-                                        <span class="visually-hidden">Вверх</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                                    <a href="#" class="icon-dir icon-up"><span class="visually-hidden">Вверх</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                            <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                                         </svg>
                                     </a>
                                 </div>
@@ -142,8 +147,8 @@
                                 <li class="catalog-item">
                                     <div class="catalog-wrapper" tabindex="0">
                                         <img class="product-photo" src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Седона">
-                                        <section class="catalog-item-product">
-                                            <h3 class="product-title">Sedona</h3>
+                                        <section class="catalog-item-product" tabindex="0">
+                                            <a class="product-title" href="#">Sedona</a>
                                             <p class="product-description">Информационный сайт для туристов</p>
                                             <button class="button product-button" type="button">9 900 руб.</button>
                                         </section>
@@ -153,7 +158,7 @@
                                     <div class="catalog-wrapper" tabindex="0"> 
                                         <img class="product-photo" src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Пинк">
                                         <section class="catalog-item-product product-wide">
-                                            <h3 class="product-title">Pink app</h3>
+                                            <a class="product-title" href="#">Pink app</a>
                                             <p class="product-description">Продуктовый лендинг приложения для iOS и Android</p>
                                             <button class="button product-button" type="button">9 900 руб.</button>
                                         </section>  
@@ -163,7 +168,7 @@
                                     <div class="catalog-wrapper" tabindex="0"> 
                                         <img class="product-photo" src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Барбершоп">
                                         <section class="catalog-item-product">
-                                            <h3 class="product-title">Barbershop</h3>
+                                            <a class="product-title" href="#">Barbershop</a>
                                             <p class="product-description">Сайт салона красоты. Для мужчин, да.</p>
                                             <button class="button product-button" type="submit">9 900 руб.</button> 
                                         </section>
@@ -173,7 +178,7 @@
                                     <div class="catalog-wrapper" tabindex="0"> 
                                         <img class="product-photo" src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Мишка">
                                         <section class="catalog-item-product">
-                                            <h3 class="product-title">Mishka</h3>
+                                            <a class="product-title" href="#">Mishka</a>
                                             <p class="product-description">Интернет-магазин вязаных игрушек</p>
                                             <button class="button product-button" type="submit">9 900 руб.</button>
                                         </section>
@@ -183,7 +188,7 @@
                                     <div class="catalog-wrapper" tabindex="0"> 
                                         <img class="product-photo" src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон Аплюс">
                                         <section class="catalog-item-product product-wide">
-                                            <h3 class="product-title">A plus</h3>
+                                            <a class="product-title" href="#">A plus</a>
                                             <p class="product-description">Лендинг курсов повышения квалификации</p>
                                             <button class="button product-button" type="submit">9 900 руб.</button>
                                         </section>
@@ -193,7 +198,7 @@
                                     <div class="catalog-wrapper" tabindex="0"> 
                                         <img class="product-photo" src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
                                         <section class="catalog-item-product product-wide">
-                                            <h3 class="product-title">Кваст</h3>
+                                            <a class="product-title" href="#">Кваст</a>
                                             <p class="product-description">Промо-сайт производителя крафтового кваса</p>
                                             <button class="button product-button" type="submit">9 900 руб.</button>
                                         </section>
@@ -201,13 +206,17 @@
                                 </li>
                             </ul>
                             <ul class="pagination-list">
-                                <li class="pagination-item pagination-item-current"><a>1</a>
+                                <li class="pagination-item pagination-item-current">
+                                    <a>1</a>
                                 </li>
-                                <li class="pagination-item"><a href="#">2</a>
+                                <li class="pagination-item">
+                                    <a href="#">2</a>
                                 </li>
-                                <li class="pagination-item"><a href="#">3</a>
+                                <li class="pagination-item">
+                                    <a href="#">3</a>
                                 </li>
-                                <li class="pagination-item"><a href="#">Следующая</a>
+                                <li class="pagination-item">
+                                    <a href="#">Следующая</a>
                                 </li>
                             </ul>
                         </section>
@@ -219,8 +228,11 @@
         <div class="map-wrapper">
             <section class="map">
                 <h2 class="visually-hidden">Где мы находимся</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586871!2d30.320853351487205!3d59.93871648178722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sit!2sit!4v1544729823114" allowfullscreen></iframe>
-                <p><img src="img/map.jpg" width="1440" height="416" alt="Адрес компании: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586871!2d30.320853351487205!3d59.93871648178722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sit!2sit!4v1544729823114" allowfullscreen>
+                </iframe>
+                <p>
+                    <img src="img/map.jpg" width="1440" height="416" alt="Адрес компании: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                </p>
             </section>
             <section class="contact">
                 <p class="contact-title">NЁRDS DESIGN STUDIO</p>
@@ -236,21 +248,24 @@
                     <h2 class="visually-hidden">Мы в соцсетях</h2>
                     <ul>
                         <li>
-                            <a class="social-btn social-btn-vk" href="#">
-                                <span class="visually-hidden">Вконтакте</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+                            <a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+                                    <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-btn social-btn-facebook" href="#">
-                                <span class="visually-hidden">Фейсбук</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+                            <a class="social-btn social-btn-facebook" href="#"><span class="visually-hidden">Фейсбук</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                                    <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-btn social-btn-instagram" href="#">
-                                <span class="visually-hidden">Инстаграм</span>
-                                <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#fff"/></svg>
+                            <a class="social-btn social-btn-instagram" href="#"><span class="visually-hidden">Инстаграм</span>
+                                <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#fff"/>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -277,10 +292,11 @@
                     <label for="contactus-letter">Текст письма:</label>
                     <textarea id="contactus-letter" name="letter" placeholder="В свободной форме"></textarea>
                 </p>
-                <button class="button contactus-button" type="submit"  >Отправить</button>
+                <button class="button contactus-button" type="submit">Отправить</button>
             </form>
             <button class="close modal-close" type="button">Закрыть</button>  
         </section>
-        <script src="js/script.min.js"></script>     
+        <script src="js/script.min.js">
+        </script>     
     </body>
 </html>
